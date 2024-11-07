@@ -21,7 +21,7 @@ library(stringr)
 
 # this txt file with all description lines is generated with grep on a bash console (cat *myfastaofInterest.fasta | grep '>' > myFile.txt)
 # the first 2 proteins are describing the database generation and are CRAPCRAP
-txt <- read_tsv("SA6850_db5_allDescriptionLines.txt", col_names = FALSE, skip = 2)
+txt <- read_tsv("../data/SA6850_db5_allDescriptionLines.txt", col_names = FALSE, skip = 2)
 
 # contaminant bool
 # mass spec related -> get rid of Contaminants
@@ -113,7 +113,7 @@ for (i in 1:length(listSplitted)) {
 resDF <- rbind(df_pseudo, df_cds_wOrtho, df_cds_noOrtho)
 
 # write out
-write_tsv(x = resDF, file = "p3404_db5_SA6850_fastaHeadersParsedIntoDF.tsv")
+write_tsv(x = resDF, file = "../data/p3404_db5_SA6850_fastaHeadersParsedIntoDF.tsv")
 
 protLen <- abs(resDF$SALocationEnd - resDF$SALocationStart)
 hist(protLen)
