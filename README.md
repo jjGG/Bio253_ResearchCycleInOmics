@@ -12,4 +12,4 @@ Contains scripts for the following tasks:
 - Extract sequences from fasta file by ID e.g for a blast search [`~/Python/extract_region_from_fasta.py`](/Python/extract_region_from_fasta.py)
 - Filter vcf file for samples of interest and annotate the SNPs with gene IDs [`~/Python/filtervcf_byInds_andAnnotate.py`](/Python/filtervcf_byInds_andAnnotate.py)
 - Create a PCA using genotype data and color the points according to any phenotypic data column [`~/R/genotype_PCA.r`](/R/genotype_PCA.r)
-- Calculate nucleotide diversity and estimate upgma tree using those estimates [`~/R/Calculate_Diversity_And_Plot_A_Tree.R`](/R/Calculate_Diversity_And_Plot_A_Tree.R)
+- Calculate nucleotide diversity and estimate upgma tree [`~/R/Calculate_Diversity_And_Plot_A_Tree.R`](/R/Calculate_Diversity_And_Plot_A_Tree.R)
